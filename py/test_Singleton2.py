@@ -6,6 +6,7 @@ from Singleton2 import Singleton
 def reset_singleton():
     Singleton._instance = None
 
+
 def test_singleton_instance():
     # Create two instances of Singleton
     instance1 = Singleton()
@@ -14,6 +15,7 @@ def test_singleton_instance():
     # Check if both instances are the same
     assert instance1 is instance2
 
+
 def test_singleton_data():
     # Create an instance of Singleton with data
     data = "Hello, World!"
@@ -21,6 +23,7 @@ def test_singleton_data():
 
     # Check if the data is stored correctly in the instance
     assert instance.data == data
+
 
 def test_singleton_modify_data():
     # Create an instance of Singleton with data

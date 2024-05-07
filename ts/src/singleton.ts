@@ -1,4 +1,4 @@
-class Singleton {
+export class Singleton {
     private static instance: Singleton
 
     
@@ -11,14 +11,3 @@ class Singleton {
         return Singleton.instance
     }
 }
-
-
-// USAGE
-
-const singleton = Singleton.getInstance()
-const singleton2 = Singleton.getInstance()
-const singleton3 = Singleton.getInstance()
-
-console.log(singleton)
-console.log(singleton === singleton2)
-console.log(singleton === singleton3)
